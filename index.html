@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--------- UNICONS ------------>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!------------ CSS ------------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--------- FAVICON ------------->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <title>Diego Marchand</title>
+</head>
+
+<body>
+    <div class="container">
+    <!--------- HEADER ------------>
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Diego</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Inicio</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">Sobre mi</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Proyectos</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contacto</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Descargar CV <i class="uil uil-import"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+    <!--------- MAIN CONTENT ------------->
+    <main class="wrapper">
+        <!------ featured-box --------->
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Diego Marchand</span>
+                </div>
+                <div class="featured-name">
+                    <!--<p>Project <span class="typedText">Manager</span></p>--->
+                    <p><span class="typedText"></span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>Apasionado por los proyectos digitales y la tecnología. Me encanta aprender de forma continua y trabajar en equipo para alcanzar las metas propuestas.</p> 
+                    </p>
+                </div>
+                <div class="featured-text-btn">
+                    <button class="btn blue-btn">Tomemos un cafe!</button>
+                    <button class="btn">Descargar CV<i class="uil uil-import"></i></button>
+                </div>
+                <div class="social_icons">
+                    <div class="icon"><i class="uil uil-instagram"></i></div>
+                    <div class="icon"><i class="uil uil-linkedin"></i></div>
+                    <div class="icon"><i class="uil uil-youtube"></i></div>
+                </div>
+            </div>
+            <div class="featured-image">
+                <div class="image">
+                    <img src="assets/images/avatar.png" alt="avatar">
+                </div>
+            </div>
+            <!-- botón de scroll
+            <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
+                    <i class="uil uil-angle-down"></i>
+                    <p>Scroll Down</p>
+                </a>
+            </div>
+            -->
+        </section>
+    
+        <!--- ABOUT BOX ------------->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>Sobre mi</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <h3>Product & Project Manager</h3>
+                        <p>He tenido la oportunidad de liderar equipos para la optimización de procesos, el lanzamiento de webs comerciales, la integración de pasarelas de pago, RPA y para la implementación de aceptación digital. Asimismo, cuento con bastos conocimientos en Growth Hacking, Design Thinking y Lean Startup.
+                        </p>
+                        <div class="about-btn">
+                            <button class="btn">Descargar CV <i class="uil uil-import"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>PMP</span>
+                            <span>Design Thinking</span>
+                            <span>Growth Hacking</span>
+                            <span>Lean</span>
+                            <span>Scrum</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Programing</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- Project Box -->
+        </section>
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Proyectos</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <i class="uil uil-suitcase"></i>
+                    <h3>Completados</h3>
+                    <label>8+ Proyectos</label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-users-alt"></i>
+                    <h3>Empresas</h3>
+                    <label>3</label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-award"></i>
+                    <h3>Experiencia</h3>
+                    <label>3+ Años</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Box -->
+         <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Tomemos un cafe!</h1>
+                <span>¿Cuentas con un proyecto en tu mente?<br>¡Hagamoslo realidad juntos!</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Contacto</h2>
+                        <p><i class="uil uil-envelope"></i> Email: diego_marchand@hotmail.es</p>
+                        <p><i class="uil uil-mobile-android"></i> Tel: +51 983931458</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Nombre">
+                            <input type="text" class="input-field" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+    </main>
+
+
+    <!--- FOOTER ------------->
+    
+    <footer>
+        <div class="top-footer">
+            <p>Diego Marchand</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">Sobre mi</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Proyectos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin"></i></div>
+                <div class="icon"><i class="uil uil-youtube"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Diego Marchand</a> <br>Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!--------- TYPING JS LINK ------------->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--------- SCROLL REVEAL JS LINK ------------->
+    <script src="https://unpkg.com/scrollreveal"></script>    
+    <!--------- MAIN JS ------------->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

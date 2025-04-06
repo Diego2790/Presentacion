@@ -51,6 +51,8 @@ html {
 
 /*Global Button design*/
 .btn {
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
     font-weight: 500;
     padding: 12px 20px;
     background: #efefef;
@@ -355,9 +357,10 @@ h3{
 }
 
 .about-info p{
-    text-align: center;
+    text-align: right;
     font-size: 15px;
     color: #777;
+    margin-bottom: 10px;
 }
 
 .about-btn a{

@@ -58,7 +58,9 @@ html {
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    font-size: 14px;
 }
+
 .btn>i {
     margin-left:10px;
 }
@@ -237,6 +239,7 @@ nav{
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    color: var(--text-color-second);
 }
 
 .icon:hover{
@@ -260,7 +263,7 @@ nav{
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 7s ease-in-out infinite;
-    background-color:rgb(0, 201, 255);
+    /*background-color:rgb(0, 201, 255);*/
 }
 
 .image img{
@@ -357,7 +360,7 @@ h3{
     color: #777;
 }
 
-.about-btn button{
+.about-btn a{
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -366,7 +369,7 @@ h3{
     border-radius: 30px;
 }
 
-.about-btn button:hover{
+.about-btn a:hover{
     background: var(--first-color-hover);
 }
 
@@ -393,6 +396,7 @@ h3{
     padding: 2px 10px;
     border-radius: 5px;
 } 
+
 /* Project Box */
 .project-container{
     display: flex;
@@ -534,6 +538,7 @@ textarea{
     padding: 15px 20px;
     outline: none;
     resize: none;
+    margin-top: 10px;
 }
 
 .form-button>.btn{
@@ -655,7 +660,7 @@ footer{
     .featured-image{
         order: 1;
         justify-content: center;
-        min-height: 150px;
+        min-height: 200px;
         width: 100%;
         margin-top: 65px;
     }
@@ -700,5 +705,15 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+    .footer_menu_list a {
+        margin-inline: 10px; /* Reduce el margen lateral */
+        text-align: center; /* Centra el texto */
+    }
+
+    .footer-menu {
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        align-items: center; /* Centra los elementos */
+        gap: 10px; /* Agrega espacio entre los elementos */
     }
 }

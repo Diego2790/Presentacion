@@ -29,7 +29,7 @@
 
 /* Typing effect */
     var typingEffect = new Typed('.typedText', {
-        strings: ["Project Manager", "Product Manager", "Digital Manager"],
+        strings: ["Project", "Product", "Digital"],
         loop: true,
         typeSpeed: 100,
         backSpeed: 80,
@@ -101,3 +101,19 @@ srRight.reveal(".form-control", {delay: 100})
     }
 
     window.addEventListener("scroll", scrollActive)
+
+/* Enviar mail a mi correo */
+    function sendEmail(event) {
+        event.preventDefault(); // Evita que el formulario recargue la página
+
+        // Obtén los valores de los campos del formulario
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Construye el enlace mailto
+        const mailtoLink = `mailto:diego_marchand@hotmail.es?subject=${encodeURIComponent(`Nombre: ${name}, Email: ${email}`)}&body=${encodeURIComponent(message)}`;
+
+        // Redirige al cliente de correo (Gmail u otro predeterminado)
+        window.location.href = mailtoLink;
+    }

@@ -29,7 +29,7 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
-                        <a href="#about" class="nav-link">Sobre mi</a>
+                        <a href="#about" class="nav-link">Sobre mí</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -43,7 +43,7 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn">Descargar CV <i class="uil uil-import"></i></button>
+                <a class="btn" onclick="window.open('assets/files/Diego Marchand_Curriculum_español.pdf', '_blank')">Descargar CV <i class="uil uil-import"></i></a>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -61,19 +61,20 @@
                 <div class="featured-name">
                     <!--<p>Project <span class="typedText">Manager</span></p>--->
                     <p><span class="typedText"></span></p>
+                    <p>Manager</p>
                 </div>
                 <div class="featured-text-info">
                     <p>Apasionado por los proyectos digitales y la tecnología. Me encanta aprender de forma continua y trabajar en equipo para alcanzar las metas propuestas.</p> 
                     </p>
                 </div>
                 <div class="featured-text-btn">
-                    <button class="btn blue-btn">Tomemos un cafe!</button>
-                    <button class="btn">Descargar CV<i class="uil uil-import"></i></button>
+                    <button class="btn blue-btn">¡Tomemos un café!</button>
+                    <a class="btn" onclick="window.open('assets/files/Diego Marchand_Curriculum_español.pdf', '_blank')">Descargar CV <i class="uil uil-import"></i></a>
                 </div>
                 <div class="social_icons">
-                    <div class="icon"><i class="uil uil-instagram"></i></div>
-                    <div class="icon"><i class="uil uil-linkedin"></i></div>
-                    <div class="icon"><i class="uil uil-youtube"></i></div>
+                    <a href="https://www.linkedin.com/in/d-marchand/" class="icon" target="_blank"><i class="uil uil-linkedin"></i></a>
+                    <a href="https://www.instagram.com/diego_marchand123/" class="icon" target="_blank"><i class="uil uil-instagram"></i></a>
+                    <a href="https://www.youtube.com/@diegomarchand7093" class="icon" target="_blank"><i class="uil uil-youtube"></i></a>
                 </div>
             </div>
             <div class="featured-image">
@@ -94,16 +95,16 @@
         <!--- ABOUT BOX ------------->
         <section class="section" id="about">
             <div class="top-header">
-                <h1>Sobre mi</h1>
+                <h1>Sobre mí</h1>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="about-info">
                         <h3>Product & Project Manager</h3>
-                        <p>He tenido la oportunidad de liderar equipos para la optimización de procesos, el lanzamiento de webs comerciales, la integración de pasarelas de pago, RPA y para la implementación de aceptación digital. Asimismo, cuento con bastos conocimientos en Growth Hacking, Design Thinking y Lean Startup.
+                        <p>He tenido la oportunidad de liderar equipos para la optimización de procesos y el despliegue de iniciativas comerciales. Asimismo, cuento con bastos conocimientos en Growth Hacking, Design Thinking y Lean Startup.
                         </p>
                         <div class="about-btn">
-                            <button class="btn">Descargar CV <i class="uil uil-import"></i></button>
+                            <a class="btn" onclick="window.open('assets/files/Diego Marchand_Curriculum_español.pdf', '_blank')">Descargar CV <i class="uil uil-import"></i></a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
                 <div class="project-box">
                     <i class="uil uil-suitcase"></i>
                     <h3>Completados</h3>
-                    <label>8+ Proyectos</label>
+                    <label>+8 Proyectos</label>
                 </div>
                 <div class="project-box">
                     <i class="uil uil-users-alt"></i>
@@ -156,7 +157,7 @@
                 <div class="project-box">
                     <i class="uil uil-award"></i>
                     <h3>Experiencia</h3>
-                    <label>3+ Años</label>
+                    <label>+3 Años</label>
                 </div>
             </div>
         </section>
@@ -164,29 +165,31 @@
         <!-- Contact Box -->
          <section class="section" id="contact">
             <div class="top-header">
-                <h1>Tomemos un cafe!</h1>
-                <span>¿Cuentas con un proyecto en tu mente?<br>¡Hagamoslo realidad juntos!</span>
+                <h1>¡Tomemos un café!</h1>
+                <span>¿Cuentas con un proyecto en mente?<br>¡Hagámoslo realidad juntos!</span>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="contact-info">
                         <h2>Contacto</h2>
-                        <p><i class="uil uil-envelope"></i> Email: diego_marchand@hotmail.es</p>
-                        <p><i class="uil uil-mobile-android"></i> Tel: +51 983931458</p>
+                        <p><i class="uil uil-envelope"></i>diego_marchand@hotmail.es</p>
+                        <p><i class="uil uil-mobile-android"></i>+51 983931458</p>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-control">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Nombre">
-                            <input type="text" class="input-field" placeholder="Email">
-                        </div>
-                        <div class="text-area">
-                            <textarea placeholder="Mensaje"></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button class="btn">Enviar <i class="uil uil-message"></i></button>
-                        </div>
+                        <form id="contactForm" onsubmit="sendEmail(event)">
+                            <div class="form-inputs">
+                                <input type="text" id="name" class="input-field" placeholder="Nombre" required>
+                                <input type="email" id="email" class="input-field" placeholder="Email" required>
+                            </div>
+                            <div class="text-area">
+                                <textarea id="message" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="btn">Enviar <i class="uil uil-message"></i></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -207,7 +210,7 @@
                     <a href="#home">Inicio</a>
                 </li>
                 <li class="footer_menu_list">
-                    <a href="#about">Sobre mi</a>
+                    <a href="#about">Sobre mí</a>
                 </li>
                 <li class="footer_menu_list">
                     <a href="#projects">Proyectos</a>
@@ -218,9 +221,9 @@
             </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin"></i></div>
-                <div class="icon"><i class="uil uil-youtube"></i></div>
+                <a href="https://www.linkedin.com/in/d-marchand/" class="icon" target="_blank"><i class="uil uil-linkedin"></i></a>
+                <a href="https://www.instagram.com/diego_marchand123/" class="icon" target="_blank"><i class="uil uil-instagram"></i></a>
+                <a href="https://www.youtube.com/@diegomarchand7093" class="icon" target="_blank"><i class="uil uil-youtube"></i></a>
             </div>
             <div class="bottom-footer">
                 <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Diego Marchand</a> <br>Todos los derechos reservados

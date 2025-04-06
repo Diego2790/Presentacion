@@ -61,6 +61,7 @@ html {
     cursor: pointer;
     transition: .4s;
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn>i {
@@ -218,8 +219,10 @@ nav{
 }
 
 .featured-text-btn>.blue-btn{
+    text-decoration: none; /* Elimina el subrayado */
     background: var(--first-color);
     color: var(--color-white);
+    text-align: center;
 }
 
 .featured-text-btn>.blue-btn:hover{
